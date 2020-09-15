@@ -15,18 +15,17 @@ body {
 #mainContainer {
 	height: 600px;
 	width: 600px;
-
 	background-color: darkgreen;
 	border: 20px groove brown;
 	border-radius: 50%;
 }
 
 #title {
+	margin-top: 80px;
 	color: white;
 	font-size: 50px;
 	font-weight: bold;
 	text-align: center;
-	margin-top: 80px;
 }
 
 #bets{

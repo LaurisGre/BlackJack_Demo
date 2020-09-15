@@ -10,17 +10,21 @@ const dealerScore = document.querySelector('#dealerScore');
 const dealerCard = document.querySelector('#dealerCard');
 const playerCash = document.querySelector('#playerCash');
 const currentBet = document.querySelector('#currentBet');
+const betAmmount = document.querySelector('#betAmmount')
 
 let arr = [2,3,4,5,6,7,8,9,10,11];
 
 let score = 0;
 
+let cash = 100;
+
 function raiseBet() {
-	console.log('raise');
+	currentBet.innerHTML = `Current bet: ${betAmmount.value}`
 }
 
 function lowerBet() {
-	console.log('lower');
+	currentBet.innerHTML = `Current bet: ${0}`
+	cash += betAmmount.value;
 }
 
 function getCard() {
@@ -32,6 +36,6 @@ function getCard() {
 	if (score > 21) {
 		score = 0;
 		playerScore.innerHTML = `Player's score: ${score}`;
-		alert('durnas');
+		alert('tu durnas');
 	};
 };
