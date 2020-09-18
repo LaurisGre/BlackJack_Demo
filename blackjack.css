@@ -31,7 +31,7 @@ body {
 #bets{
 	text-align: center;
 	margin: 0 auto;
-	margin-top: 70px;
+	margin-top: 50px;
 
 	height: 80px;
 	width: 200px;
@@ -106,30 +106,77 @@ body {
 
 #playerCard {
 	position: absolute;
-	top: -100px;
+	top: -80px;
 	left: -60px;
 }
 
 #dealerCard {
 	position: absolute;
-	top: -100px;
+	top: -80px;
 	right: -60px;
 }
 
 #scoreContainer {
+	margin-top: 40px;
+	padding: 0 16px;
 	display: flex;
 	justify-content: space-between;
-	padding: 0 16px;
 	color: white;
-	margin-top: 20px;
 }
 
 #player {
 	margin-left: 10px;
 }
 
+#betContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px auto;
+	margin-bottom: 20px;
+	justify-content: center;
+	position: relative;
+}
+
+input {
+	padding: 5px;
+	text-align: center;
+	font-size: 16px;
+	width: 60px;
+	background-color: silver;
+	color: black;
+}
+
+.betBox {
+	position: relative;
+	width: 300px;
+}
+
+#raiseBet {
+	position: absolute;
+	top: -35px;
+	right: 200px;
+}
+
+#resetBet {
+	position: absolute;
+	top: -35px;
+	left: 200px;
+}
+
+#playerCash {
+	text-align: center;
+	color: white;
+}
+
+#buttonBox {
+	display: flex;
+	justify-content: center;
+}
+
 .butt {
 	padding: 5px;
+	margin: 0 5px;
 	background-color: forestgreen;
 	border-radius: 4px;
 	box-shadow: 0 9px green;
@@ -144,51 +191,8 @@ body {
 	color: gold;
 }
 
-#betContainer {
-	display: flex;
-	margin: 40px auto;
-	margin-bottom: 20px;
-	justify-content: center;
-	position: relative;
-}
-
-#raiseBet {
-	position: absolute;
-	top: 0;
-	left: 100px;
-}
-
-#lowerBet {
-	position: absolute;
-	top: 0;
-	right: 90px;
-}
-
-#playerCash {
-	text-align: center;
-	color: white;
-}
-
-input {
-	padding: 5px;
-	text-align: center;
-	font-size: 16px;
-	width: 160px;
-	margin-top: 3px;
-	background-color: silver;
-	color: gold;
-}
-
-#playerCash {
-	position: relative;
-}
-
-#hitMe {
-	position: absolute;
-	top: 30px;
-	left: 194px;
-
-	width: 200px;
+.butt2{
+	width: 140px;
 	height: 40px;
 	text-align: center;
 	font-size: 30px;
