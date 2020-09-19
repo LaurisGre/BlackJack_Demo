@@ -66,7 +66,7 @@ function getCard() {
 	};
 
 	if (playScore > 21) {
-		alert('tu durnas');
+		alert('you lose');
 		betLogic(lose);
 		boardReset();
 	};
